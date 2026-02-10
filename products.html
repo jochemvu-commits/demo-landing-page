@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — AI WhatsApp & Voice Agents | builtbyjo</title>
+    <meta name="description"
+        content="WhatsApp AI Assistant €199/mo, AI Voice Agent €249/mo, or bundle both for €349/mo. AI employees that handle customer communication 24/7.">
+    <link rel="canonical" href="https://builtbyjo.co/products">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+
+    <div class="content-wrap">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-inner">
+                <a href="/" class="logo">built<span>by</span>jo</a>
+
+                <div class="nav-toggle" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="/">Home</a>
+                    <a href="products.html" class="active">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://calendly.com/builtbyjo/discovery" class="nav-cta">Book a Call</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero section-dark" style="padding-bottom: 60px;">
+            <div class="container">
+                <h1>AI Employees That<br><span class="text-accent">Work 24/7</span></h1>
+                <p>Choose the AI that fits your business. WhatsApp, phone, or both — we've got you covered.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="section section-dark" style="padding-top: 0;">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- WhatsApp AI -->
+                    <div class="card pricing-card" id="whatsapp">
+                        <div class="pricing-badge">Most Popular</div>
+                        <h3>WhatsApp AI Assistant</h3>
+                        <p class="text-muted">Your 24/7 WhatsApp receptionist</p>
+                        <div class="price">€199<span>/month</span></div>
+
+                        <ul class="pricing-features">
+                            <li>Instant replies 24/7</li>
+                            <li>Books appointments automatically</li>
+                            <li>Answers FAQs about your business</li>
+                            <li>Speaks 50+ languages</li>
+                            <li>Hands off to you when needed</li>
+                            <li>Unlimited messages</li>
+                            <li>Custom personality & tone</li>
+                            <li>Works with your booking system</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/discovery" class="btn btn-primary">Get Started →</a>
+                    </div>
+
+                    <!-- Voice Agent -->
+                    <div class="card pricing-card" id="voice">
+                        <div class="pricing-badge"
+                            style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Coming Soon</div>
+                        <h3>AI Voice Agent</h3>
+                        <p class="text-muted">Your 24/7 phone receptionist</p>
+                        <div class="price">€249<span>/month</span></div>
+
+                        <ul class="pricing-features">
+                            <li>Answers phone calls 24/7</li>
+                            <li>Natural human-like voice</li>
+                            <li>Books appointments by phone</li>
+                            <li>Takes messages for you</li>
+                            <li>Transfers urgent calls to you</li>
+                            <li>English & Dutch supported</li>
+                            <li>Custom greeting & personality</li>
+                            <li>Call recordings & transcripts</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/discovery" class="btn btn-outline">Join Waitlist →</a>
+                    </div>
+
+                    <!-- Bundle -->
+                    <div class="card pricing-card featured" id="bundle">
+                        <h3>Complete Bundle</h3>
+                        <p class="text-muted">WhatsApp + Phone coverage</p>
+                        <div class="price">€349<span>/month</span></div>
+                        <p class="text-accent" style="margin-top: -12px; font-weight: 600;">Save €99/month</p>
+
+                        <ul class="pricing-features">
+                            <li>Everything in WhatsApp AI</li>
+                            <li>Everything in Voice Agent</li>
+                            <li>Unified customer history</li>
+                            <li>Priority support</li>
+                            <li>Custom integrations</li>
+                            <li>Dedicated setup call</li>
+                            <li>Full communication coverage</li>
+                            <li>Never miss a customer</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/discovery" class="btn btn-primary">Get the Bundle →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Deep Dive -->
+        <section class="section section-light" id="whatsapp-details">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+                    <div>
+                        <div class="pricing-badge"
+                            style="background: var(--accent-glow); border: 1px solid var(--accent);">💬 WhatsApp AI
+                            Assistant</div>
+                        <h2 style="color: var(--text-dark); margin-top: 16px;">Your Messages, Handled</h2>
+                        <p class="mt-3">Stop losing customers to slow replies. Our WhatsApp AI responds instantly, 24
+                            hours a day, 7 days a week. It knows your business, speaks your customers' language, and
+                            books appointments while you sleep.</p>
+
+                        <div class="mt-4">
+                            <h4 style="color: var(--text-dark); margin-bottom: 16px;">What it does:</h4>
+                            <ul style="list-style: none;">
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span style="color: var(--text-dark-secondary);"><strong
+                                            style="color: var(--text-dark);">Instant Replies</strong> — Responds in
+                                        seconds, not hours</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span style="color: var(--text-dark-secondary);"><strong
+                                            style="color: var(--text-dark);">Appointment Booking</strong> — Checks your
+                                        calendar, books slots</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span style="color: var(--text-dark-secondary);"><strong
+                                            style="color: var(--text-dark);">FAQ Handling</strong> — Answers common
+                                        questions automatically</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span style="color: var(--text-dark-secondary);"><strong
+                                            style="color: var(--text-dark);">Multi-language</strong> — Detects and
+                                        responds in 50+ languages</span>
+                                </li>
+                                <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span style="color: var(--text-dark-secondary);"><strong
+                                            style="color: var(--text-dark);">Smart Handoff</strong> — Notifies you when
+                                        human touch is needed</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="https://wa.me/15164352731" target="_blank" class="btn btn-primary">
+                                💬 Try the Demo →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="demo-phone" style="border-color: var(--border-light);">
+                        <div class="demo-phone-screen">
+                            <div class="demo-placeholder">
+                                <div>
+                                    <p style="font-size: 2rem; margin-bottom: 12px;">💬</p>
+                                    <p>WhatsApp Demo<br><small>Message us to try it</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Deep Dive -->
+        <section class="section section-dark" id="voice-details">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+                    <div class="demo-phone">
+                        <div class="demo-phone-screen" style="background: var(--bg-card);">
+                            <div class="demo-placeholder">
+                                <div>
+                                    <p style="font-size: 2rem; margin-bottom: 12px;">📞</p>
+                                    <p>Voice Demo<br><small>Coming soon</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="pricing-badge">📞 AI Voice Agent</div>
+                        <h2 style="margin-top: 16px;">Your Calls, Answered</h2>
+                        <p class="mt-3">Never miss a phone call again. Our AI voice agent picks up every call, speaks
+                            naturally, and handles bookings just like a human receptionist — but available 24/7 and
+                            never calls in sick.</p>
+
+                        <div class="mt-4">
+                            <h4 style="margin-bottom: 16px;">What it does:</h4>
+                            <ul style="list-style: none;">
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Answers Calls</strong> — Picks up instantly, 24/7</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Natural Voice</strong> — Sounds like a real person, not a robot</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Books by Phone</strong> — Schedules appointments
+                                        conversationally</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Takes Messages</strong> — Records and transcribes for you</span>
+                                </li>
+                                <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Live Transfer</strong> — Sends urgent calls to your phone</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="https://calendly.com/builtbyjo/discovery" class="btn btn-outline">
+                                Join the Waitlist →
+                            </a>
+                            <p class="text-muted mt-2" style="font-size: 0.9rem;">Voice agent launching Q1 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 style="color: var(--text-dark);">The Math Makes Sense</h2>
+                    <p>One missed booking costs more than a month of service.</p>
+                </div>
+
+                <div class="grid-3-cols" style="max-width: 900px; margin: 0 auto;">
+                    <div class="card card-light" style="text-align: center;">
+                        <h3 style="font-size: 3rem; color: var(--accent); margin-bottom: 8px;">37%</h3>
+                        <p style="color: var(--text-dark); font-weight: 500;">of customers won't wait more than 5
+                            minutes for a reply</p>
+                    </div>
+
+                    <div class="card card-light" style="text-align: center;">
+                        <h3 style="font-size: 3rem; color: var(--accent); margin-bottom: 8px;">€50-200</h3>
+                        <p style="color: var(--text-dark); font-weight: 500;">average value of a single missed booking
+                        </p>
+                    </div>
+
+                    <div class="card card-light" style="text-align: center;">
+                        <h3 style="font-size: 3rem; color: var(--accent); margin-bottom: 8px;">24/7</h3>
+                        <p style="color: var(--text-dark); font-weight: 500;">your AI works while you sleep, eat, and
+                            live your life</p>
+                    </div>
+                </div>
+
+                <div class="card card-light mt-5"
+                    style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 16px;">Quick Example</h4>
+                    <p>A hair salon with an average booking value of €75 misses just 3 potential customers per week due
+                        to slow replies or missed calls. That's <strong style="color: var(--accent);">€900/month in lost
+                            revenue</strong> — almost 5x the cost of the WhatsApp AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Compare Plans</h2>
+                </div>
+
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                        <thead>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <th
+                                    style="text-align: left; padding: 16px; color: var(--text-secondary); font-weight: 500;">
+                                    Feature</th>
+                                <th style="text-align: center; padding: 16px;">WhatsApp AI<br><span
+                                        style="color: var(--accent);">€199/mo</span></th>
+                                <th style="text-align: center; padding: 16px;">Voice Agent<br><span
+                                        style="color: var(--accent);">€249/mo</span></th>
+                                <th
+                                    style="text-align: center; padding: 16px; background: var(--accent-glow); border-radius: 8px 8px 0 0;">
+                                    Bundle<br><span style="color: var(--accent);">€349/mo</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">WhatsApp responses</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Phone call handling</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Appointment booking</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">24/7 availability</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Multi-language support</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">50+ languages</td>
+                                <td style="text-align: center; padding: 16px;">EN, NL</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    Full support</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Priority support</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px;">Unified customer history</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow); border-radius: 0 0 8px 8px;">
+                                    ✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="https://calendly.com/builtbyjo/discovery" class="btn btn-primary btn-lg">
+                        Book a Free Call to Discuss →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="card"
+                    style="text-align: center; padding: 60px 40px; background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.1) 100%); border-color: var(--accent);">
+                    <h2 class="mb-3">Not Sure Which One You Need?</h2>
+                    <p style="max-width: 500px; margin: 0 auto 32px;">Book a free call. We'll learn about your business
+                        and recommend the right solution — no pressure, no commitment.</p>
+                    <a href="https://calendly.com/builtbyjo/discovery" class="btn btn-primary btn-lg">
+                        Let's Talk →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="logo">built<span>by</span>jo</a>
+                        <p>AI employees for service businesses. Never miss a customer again.</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <h5>Products</h5>
+                        <a href="products.html#whatsapp">WhatsApp AI</a>
+                        <a href="products.html#voice">Voice Agent</a>
+                        <a href="products.html#bundle">Bundle Deal</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://calendly.com/builtbyjo/discovery">Book a Call</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h5>Contact</h5>
+                        <a href="mailto:jay@builtbyjo.co">jay@builtbyjo.co</a>
+                        <a href="https://wa.me/15164352731">WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2025 builtbyjo. All rights reserved.</p>
+                    <div class="footer-langs">
+                        <a href="#" class="active">English</a>
+                        <a href="#">Nederlands</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+
+    <style>
+        /* Products page specific responsive fixes */
+        @media (max-width: 900px) {
+
+            #whatsapp-details>.container>div,
+            #voice-details>.container>div {
+                grid-template-columns: 1fr !important;
+                gap: 32px !important;
+            }
+
+            #voice-details>.container>div {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</body>
+
+</html>

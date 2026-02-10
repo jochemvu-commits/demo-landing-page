@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Get in Touch | builtbyjo</title>
+    <meta name="description" content="Book a free discovery call or send us a message. We respond within 24 hours.">
+    <link rel="canonical" href="https://builtbyjo.co/contact">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-bg"></div>
+    
+    <div class="content-wrap">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-inner">
+                <a href="/" class="logo">built<span>by</span>jo</a>
+                
+                <div class="nav-toggle" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="/">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="https://calendly.com/builtbyjo/discovery" class="nav-cta">Book a Call</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero -->
+        <section class="hero section-dark" style="padding-bottom: 40px;">
+            <div class="container">
+                <h1>Let's <span class="text-accent">Talk</span></h1>
+                <p>Book a free call, send a message, or just say hi. I respond to everything personally.</p>
+            </div>
+        </section>
+        
+        <!-- Contact Content -->
+        <section class="section section-dark" style="padding-top: 20px;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1100px; margin: 0 auto;">
+                    
+                    <!-- Left: Calendly -->
+                    <div>
+                        <h3 class="mb-3">Book a Free Call</h3>
+                        <p class="mb-4">15-minute discovery call. No sales pitch — just a conversation about your business and whether I can help.</p>
+                        
+                        <!-- Calendly inline widget -->
+                        <div class="card" style="padding: 0; overflow: hidden; min-height: 600px;">
+                            <iframe 
+                                src="https://calendly.com/builtbyjo/discovery?hide_landing_page_details=1&hide_gdpr_banner=1" 
+                                width="100%" 
+                                height="600" 
+                                frameborder="0"
+                                style="border: none; background: var(--bg-card);"
+                            ></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Other contact options -->
+                    <div>
+                        <h3 class="mb-3">Other Ways to Reach Me</h3>
+                        <p class="mb-4">Prefer to message? I'm quick to respond on all channels.</p>
+                        
+                        <!-- Quick contact cards -->
+                        <div class="card mb-3" style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 48px; height: 48px; background: #25D366; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                💬
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="margin-bottom: 4px;">WhatsApp</h4>
+                                <p class="text-muted" style="margin: 0;">Usually reply within an hour</p>
+                            </div>
+                            <a href="https://wa.me/15164352731" target="_blank" class="btn btn-sm btn-outline">Message →</a>
+                        </div>
+                        
+                        <div class="card mb-3" style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 48px; height: 48px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                ✉️
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="margin-bottom: 4px;">Email</h4>
+                                <p class="text-muted" style="margin: 0;">jay@builtbyjo.co</p>
+                            </div>
+                            <a href="mailto:jay@builtbyjo.co" class="btn btn-sm btn-outline">Send Email →</a>
+                        </div>
+                        
+                        <!-- Contact form -->
+                        <div class="card mt-5">
+                            <h4 class="mb-3">Send a Message</h4>
+                            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Jane Smith">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="business">Business Name</label>
+                                    <input type="text" id="business" name="business" placeholder="Jane's Hair Studio">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required placeholder="Tell me about your business and what you're looking for..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                    Send Message →
+                                </button>
+                            </form>
+                            
+                            <p class="text-muted text-center mt-3" style="font-size: 0.85rem;">
+                                I respond to all messages within 24 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Mini -->
+        <section class="section section-light">
+            <div class="container" style="max-width: 800px;">
+                <h2 class="text-center mb-5" style="color: var(--text-dark);">Quick Answers</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item" style="border-color: var(--border-light);">
+                        <button class="faq-question" style="color: var(--text-dark);">What happens on the discovery call?</button>
+                        <div class="faq-answer">
+                            <p>We talk about your business, how you currently handle customer communication, and where you're losing customers. I'll explain how the AI would work for your specific situation and answer any questions. No pressure, no hard sell — just a conversation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" style="border-color: var(--border-light);">
+                        <button class="faq-question" style="color: var(--text-dark);">What timezone are you in?</button>
+                        <div class="faq-answer">
+                            <p>I'm in Romania (EET/EEST). That's GMT+2 in winter, GMT+3 in summer. This works well for UK, Ireland, and European clients during normal business hours, and for Australia in their mornings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" style="border-color: var(--border-light);">
+                        <button class="faq-question" style="color: var(--text-dark);">How quickly do you respond?</button>
+                        <div class="faq-answer">
+                            <p>WhatsApp messages usually get a reply within an hour during working hours. Emails within 24 hours. I'm a one-person operation, so I prioritize being responsive — slow communication is exactly what we help businesses avoid!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="logo">built<span>by</span>jo</a>
+                        <p>AI employees for service businesses. Never miss a customer again.</p>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h5>Products</h5>
+                        <a href="products.html#whatsapp">WhatsApp AI</a>
+                        <a href="products.html#voice">Voice Agent</a>
+                        <a href="products.html#bundle">Bundle Deal</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://calendly.com/builtbyjo/discovery">Book a Call</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h5>Contact</h5>
+                        <a href="mailto:jay@builtbyjo.co">jay@builtbyjo.co</a>
+                        <a href="https://wa.me/15164352731">WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 builtbyjo. All rights reserved.</p>
+                    <div class="footer-langs">
+                        <a href="#" class="active">English</a>
+                        <a href="#">Nederlands</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+        
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+    </script>
+    
+    <style>
+        /* Contact page specific styles */
+        .section-light .faq-question::after {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 900px) {
+            section.section-dark > .container > div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 48px !important;
+            }
+        }
+    </style>
+</body>
+</html>
