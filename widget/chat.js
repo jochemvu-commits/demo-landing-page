@@ -492,6 +492,84 @@
                      align-items: flex-end; /* Keep aligned right */
                 }
             }
+
+        /* Light Mode Support */
+        [data-theme="light"] #bjWidget .bj-window {
+            background-color: #ffffff;
+            border-color: #e5e7eb;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        [data-theme="light"] #bjWidget .bj-header {
+            background-color: #f9fafb;
+            border-bottom-color: #e5e7eb;
+        }
+
+        [data-theme="light"] #bjWidget .bj-name {
+            color: #1f2937;
+        }
+
+        [data-theme="light"] #bjWidget .bj-reset-btn {
+            color: #6b7280;
+        }
+
+        [data-theme="light"] #bjWidget .bj-reset-btn:hover {
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        [data-theme="light"] #bjWidget .bj-messages {
+            scrollbar-color: #d1d5db transparent;
+        }
+
+        [data-theme="light"] #bjWidget .bj-messages::-webkit-scrollbar-thumb {
+            background-color: #d1d5db;
+        }
+
+        [data-theme="light"] #bjWidget .bj-message-bubble {
+            color: #1f2937;
+        }
+
+        [data-theme="light"] #bjWidget .bj-bot .bj-message-bubble {
+            background-color: #f3f4f6;
+            border-color: #e5e7eb;
+        }
+
+        [data-theme="light"] #bjWidget .bj-typing {
+            background-color: #f3f4f6;
+            border-color: #e5e7eb;
+        }
+
+        [data-theme="light"] #bjWidget .bj-dot {
+            background-color: #9ca3af;
+        }
+
+        [data-theme="light"] #bjWidget .bj-input-area {
+            background-color: #f9fafb;
+            border-top-color: #e5e7eb;
+        }
+
+        [data-theme="light"] #bjWidget .bj-input {
+            background-color: #ffffff;
+            border-color: #e5e7eb;
+            color: #1f2937;
+        }
+
+        [data-theme="light"] #bjWidget .bj-send-btn:disabled {
+            background-color: #e5e7eb;
+        }
+
+        [data-theme="light"] #bjWidget .bj-branding a {
+            color: #9ca3af;
+        }
+
+        [data-theme="light"] #bjWidget .bj-branding a:hover {
+            color: #6b7280;
+        }
+
+        [data-theme="light"] #bjWidget .bj-notification-dot {
+            border-color: #ffffff;
+        }
     `;
 
     // Inject Styles

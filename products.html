@@ -39,6 +39,10 @@
                     <a href="products.html" class="active">Products</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌙</span>
+                    </button>
                     <a href="https://calendly.com/builtbyjo/free-call" class="nav-cta">Book a Call</a>
                 </div>
             </div>
@@ -56,39 +60,65 @@
         <section class="section section-dark" style="padding-top: 0;">
             <div class="container">
 
-                <!-- SECTION 1: WhatsApp AI Assistant -->
-                <div style="max-width: 450px; margin: 0 auto 80px;">
-                    <div class="card pricing-card featured" id="whatsapp">
-                        <div class="pricing-badge">Most Popular</div>
-                        <h3>WhatsApp AI Assistant</h3>
-                        <p class="text-muted">Your 24/7 WhatsApp receptionist</p>
+                <!-- SECTION 1: Text AI Assistants (Website + WhatsApp side by side) -->
+                <div id="text-ai">
+                    <h2 class="text-center mb-2">Text AI Assistants</h2>
+                    <p class="text-center text-muted mb-5">Instant responses to customer messages — on your website or WhatsApp.</p>
 
-                        <div class="price"
-                            style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
-                            <del
-                                style="font-size: 1.2rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€249</del>
-                            <span>€149<span
-                                    style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/month</span></span>
+                    <div class="grid-2-cols mb-5" style="max-width: 900px; margin: 0 auto;">
+                        <!-- Website AI Chatbot -->
+                        <div class="card pricing-card" id="website">
+                            <div class="pricing-badge" style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Entry Level</div>
+                            <h3>🌐 Website AI Chatbot</h3>
+                            <p class="text-muted">Your 24/7 website sales assistant</p>
+
+                            <div class="price" style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
+                                <del style="font-size: 1.2rem; color: var(--text-muted);">€199</del>
+                                <span>€99<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/month</span></span>
+                            </div>
+
+                            <div style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 24px; display: inline-block;">
+                                Founding Price — only 10 spots</div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€149 one-time setup</p>
+
+                            <ul class="pricing-features">
+                                <li>Live chat widget on your website</li>
+                                <li>Answers visitor questions 24/7</li>
+                                <li>Captures leads automatically</li>
+                                <li>Books appointments from your site</li>
+                                <li>Speaks 50+ languages</li>
+                                <li>Custom branding & colors</li>
+                            </ul>
+
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Get Started →</a>
                         </div>
 
-                        <div
-                            style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 24px; display: inline-block;">
-                            Founding Member Price — only 5 spots</div>
-                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€249 one-time
-                            setup</p>
+                        <!-- WhatsApp AI Assistant -->
+                        <div class="card pricing-card featured" id="whatsapp">
+                            <div class="pricing-badge">Most Popular</div>
+                            <h3>💬 WhatsApp AI Assistant</h3>
+                            <p class="text-muted">Your 24/7 WhatsApp receptionist</p>
 
-                        <ul class="pricing-features">
-                            <li>Instant replies 24/7</li>
-                            <li>Books appointments automatically</li>
-                            <li>Answers FAQs about your business</li>
-                            <li>Speaks 50+ languages</li>
-                            <li>Hands off to you when needed</li>
-                            <li>Unlimited messages</li>
-                            <li>Custom personality & tone</li>
-                            <li>Works with your booking system</li>
-                        </ul>
+                            <div class="price" style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
+                                <del style="font-size: 1.2rem; color: var(--text-muted);">€249</del>
+                                <span>€149<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/month</span></span>
+                            </div>
 
-                        <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Get Started →</a>
+                            <div style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 24px; display: inline-block;">
+                                Founding Price — only 5 spots</div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€249 one-time setup</p>
+
+                            <ul class="pricing-features">
+                                <li>Instant replies 24/7</li>
+                                <li>Books appointments automatically</li>
+                                <li>Answers FAQs about your business</li>
+                                <li>Speaks 50+ languages</li>
+                                <li>Unlimited messages</li>
+                                <li>Works with your booking system</li>
+                            </ul>
+
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Get Started →</a>
+                        </div>
                     </div>
                 </div>
 
@@ -206,13 +236,62 @@
                 <!-- SECTION 3: Bundle Deals -->
                 <div id="bundle">
                     <h2 class="text-center mb-2" style="margin-top: 80px;">Save More with a Bundle</h2>
-                    <p class="text-center text-muted mb-5">WhatsApp + Voice together — complete customer communication
-                        coverage</p>
+                    <p class="text-center text-muted mb-5">Combine products for complete customer communication coverage</p>
+
+                    <!-- Complete Bundle (All 3) -->
+                    <div style="max-width: 450px; margin: 0 auto 48px;">
+                        <div class="card pricing-card featured">
+                            <div class="pricing-badge">Best Value — Save €248</div>
+                            <h3>Complete Bundle</h3>
+                            <p class="text-muted">Website + WhatsApp + Voice Pro</p>
+                            <div class="price"
+                                style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
+                                <del
+                                    style="font-size: 1.2rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€597</del>
+                                <span>€349<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/month</span></span>
+                            </div>
+                            <div
+                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
+                                Founding Member Price — only 5 spots</div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€449 one-time setup (save €198)</p>
+                            
+                            <ul class="pricing-features">
+                                <li>🌐 Website AI Chatbot</li>
+                                <li>💬 WhatsApp AI Assistant</li>
+                                <li>📞 AI Voice Agent (Pro tier)</li>
+                                <li>400 voice minutes/month</li>
+                                <li>Priority support</li>
+                                <li>Unified customer history</li>
+                            </ul>
+                            
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Get the Complete Bundle →</a>
+                        </div>
+                    </div>
+
+                    <h3 class="text-center mb-4" style="color: var(--text-secondary); font-weight: 400;">Or choose a smaller bundle:</h3>
 
                     <div class="grid-3-cols">
-                        <!-- Bundle 1 -->
+                        <!-- Bundle 1: Website + WhatsApp -->
                         <div class="card pricing-card">
-                            <h3>WhatsApp + Voice Starter</h3>
+                            <h3>Website + WhatsApp</h3>
+                            <p class="text-muted">Text channels covered</p>
+                            <div class="price"
+                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
+                                <del
+                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€448</del>
+                                <span>€219<span style="font-size: 0.9rem;">/month</span></span>
+                            </div>
+                            <div
+                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
+                                Founding Member Price</div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€349 setup (save €49)</p>
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Get This Bundle →</a>
+                        </div>
+
+                        <!-- Bundle 2: WhatsApp + Voice -->
+                        <div class="card pricing-card">
+                            <h3>WhatsApp + Voice</h3>
+                            <p class="text-muted">Mobile channels covered</p>
                             <div class="price"
                                 style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
                                 <del
@@ -221,48 +300,26 @@
                             </div>
                             <div
                                 style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Price — only 5 spots</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€399 setup
-                                (save €99)</p>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Get the Bundle
-                                →</a>
+                                Founding Member Price</div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€399 setup (save €99)</p>
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Get This Bundle →</a>
                         </div>
 
-                        <!-- Bundle 2 -->
-                        <div class="card pricing-card featured">
-                            <div class="pricing-badge">Best Value</div>
-                            <h3>WhatsApp + Voice Pro</h3>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€648</del>
-                                <span>€399<span style="font-size: 0.9rem;">/month</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Price — only 5 spots</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€399 setup
-                                (save €99)</p>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Get the Bundle
-                                →</a>
-                        </div>
-
-                        <!-- Bundle 3 -->
+                        <!-- Bundle 3: Website + Voice -->
                         <div class="card pricing-card">
-                            <h3>WhatsApp + Voice Ultimate</h3>
+                            <h3>Website + Voice</h3>
+                            <p class="text-muted">Inbound channels covered</p>
                             <div class="price"
                                 style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
                                 <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€848</del>
-                                <span>€549<span style="font-size: 0.9rem;">/month</span></span>
+                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€448</del>
+                                <span>€269<span style="font-size: 0.9rem;">/month</span></span>
                             </div>
                             <div
                                 style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Price — only 5 spots</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€399 setup
-                                (save €99)</p>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Get the Bundle
-                                →</a>
+                                Founding Member Price</div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€349 setup (save €49)</p>
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Get This Bundle →</a>
                         </div>
                     </div>
                 </div>
@@ -270,18 +327,15 @@
             </div>
         </section>
 
-        <!-- WhatsApp Deep Dive -->
-        <section class="section section-light" id="whatsapp-details">
+        <!-- Website Chatbot Deep Dive -->
+        <section class="section section-light" id="website-details">
             <div class="container">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
                     <div>
                         <div class="pricing-badge"
-                            style="background: var(--accent-glow); border: 1px solid var(--accent);">💬 WhatsApp AI
-                            Assistant</div>
-                        <h2 style="color: var(--text-dark); margin-top: 16px;">Your Messages, Handled</h2>
-                        <p class="mt-3">Stop losing customers to slow replies. Our WhatsApp AI responds instantly, 24
-                            hours a day, 7 days a week. It knows your business, speaks your customers' language, and
-                            books appointments while you sleep.</p>
+                            style="background: var(--accent-glow); border: 1px solid var(--accent);">🌐 Website AI Chatbot</div>
+                        <h2 style="color: var(--text-dark); margin-top: 16px;">Turn Visitors into Customers</h2>
+                        <p class="mt-3">Most website visitors leave without contacting you. Our AI chatbot engages them instantly, answers their questions, and converts them into leads or bookings — even while you sleep.</p>
 
                         <div class="mt-4">
                             <h4 style="color: var(--text-dark); margin-bottom: 16px;">What it does:</h4>
@@ -290,35 +344,93 @@
                                     style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
                                     <span style="color: var(--accent);">✓</span>
                                     <span style="color: var(--text-dark-secondary);"><strong
-                                            style="color: var(--text-dark);">Instant Replies</strong> — Responds in
-                                        seconds, not hours</span>
+                                            style="color: var(--text-dark);">Instant Engagement</strong> — Greets visitors and starts conversations</span>
                                 </li>
                                 <li
                                     style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
                                     <span style="color: var(--accent);">✓</span>
                                     <span style="color: var(--text-dark-secondary);"><strong
-                                            style="color: var(--text-dark);">Appointment Booking</strong> — Checks your
-                                        calendar, books slots</span>
+                                            style="color: var(--text-dark);">Lead Capture</strong> — Collects contact info from interested visitors</span>
                                 </li>
                                 <li
                                     style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
                                     <span style="color: var(--accent);">✓</span>
                                     <span style="color: var(--text-dark-secondary);"><strong
-                                            style="color: var(--text-dark);">FAQ Handling</strong> — Answers common
-                                        questions automatically</span>
+                                            style="color: var(--text-dark);">FAQ Automation</strong> — Answers common questions about your business</span>
                                 </li>
                                 <li
                                     style="padding: 12px 0; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px;">
                                     <span style="color: var(--accent);">✓</span>
                                     <span style="color: var(--text-dark-secondary);"><strong
-                                            style="color: var(--text-dark);">Multi-language</strong> — Detects and
-                                        responds in 50+ languages</span>
+                                            style="color: var(--text-dark);">Appointment Booking</strong> — Schedules meetings directly from chat</span>
                                 </li>
                                 <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
                                     <span style="color: var(--accent);">✓</span>
                                     <span style="color: var(--text-dark-secondary);"><strong
-                                            style="color: var(--text-dark);">Smart Handoff</strong> — Notifies you when
-                                        human touch is needed</span>
+                                            style="color: var(--text-dark);">Easy Setup</strong> — One line of code, works on any website</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">
+                                Get Started →
+                            </a>
+                            <p class="mt-2" style="font-size: 0.9rem; color: var(--text-dark-secondary);">Try the chat widget on this page →</p>
+                        </div>
+                    </div>
+
+                    <div class="demo-phone" style="border-color: var(--border-light);">
+                        <div class="demo-phone-screen">
+                            <div class="demo-placeholder">
+                                <div>
+                                    <p style="font-size: 2rem; margin-bottom: 12px;">🌐</p>
+                                    <p>Website Chatbot<br><small>Try it on this page</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Deep Dive -->
+        <section class="section section-dark" id="whatsapp-details">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+                    <div>
+                        <div class="pricing-badge">💬 WhatsApp AI Assistant</div>
+                        <h2 style="margin-top: 16px;">Your Messages, Handled</h2>
+                        <p class="mt-3">Stop losing customers to slow replies. Our WhatsApp AI responds instantly, 24
+                            hours a day, 7 days a week. It knows your business, speaks your customers' language, and
+                            books appointments while you sleep.</p>
+
+                        <div class="mt-4">
+                            <h4 style="margin-bottom: 16px;">What it does:</h4>
+                            <ul style="list-style: none;">
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Instant Replies</strong> — Responds in seconds, not hours</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Appointment Booking</strong> — Checks your calendar, books slots</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>FAQ Handling</strong> — Answers common questions automatically</span>
+                                </li>
+                                <li
+                                    style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Multi-language</strong> — Detects and responds in 50+ languages</span>
+                                </li>
+                                <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
+                                    <span style="color: var(--accent);">✓</span>
+                                    <span><strong>Smart Handoff</strong> — Notifies you when human touch is needed</span>
                                 </li>
                             </ul>
                         </div>
@@ -330,8 +442,8 @@
                         </div>
                     </div>
 
-                    <div class="demo-phone" style="border-color: var(--border-light);">
-                        <div class="demo-phone-screen">
+                    <div class="demo-phone">
+                        <div class="demo-phone-screen" style="background: var(--bg-card);">
                             <div class="demo-placeholder">
                                 <div>
                                     <p style="font-size: 2rem; margin-bottom: 12px;">💬</p>
@@ -564,9 +676,10 @@
 
                     <div class="footer-col">
                         <h5>Products</h5>
+                        <a href="products.html#website">Website Chatbot</a>
                         <a href="products.html#whatsapp">WhatsApp AI</a>
                         <a href="products.html#voice">Voice Agent</a>
-                        <a href="products.html#bundle">Bundle Deal</a>
+                        <a href="products.html#bundle">Bundle Deals</a>
                     </div>
 
                     <div class="footer-col">
@@ -598,12 +711,30 @@
         function toggleNav() {
             document.getElementById('navLinks').classList.toggle('active');
         }
+
+        // Theme toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        })();
     </script>
 
     <style>
         /* Products page specific responsive fixes */
         @media (max-width: 900px) {
 
+            #website-details>.container>div,
             #whatsapp-details>.container>div,
             #voice-details>.container>div {
                 grid-template-columns: 1fr !important;

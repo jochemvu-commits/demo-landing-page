@@ -5,7 +5,6 @@
     --bg-secondary: #0a0a0a;
     --bg-card: #1a1a1a;
     --bg-card-hover: #1a1a1a;
-    /* Kept same as card, hover effects via transform/shadow */
     --bg-white: #0a0a0a;
     --bg-light: #0a0a0a;
 
@@ -19,13 +18,10 @@
     --text-secondary: #8a8a9a;
     --text-muted: #5a5a6a;
     --text-dark: #f0f0f2;
-    /* Inverted to light */
     --text-dark-secondary: #8a8a9a;
-    /* Inverted to light */
 
     --border: rgba(255, 255, 255, 0.06);
     --border-light: rgba(255, 255, 255, 0.08);
-    /* Adjusted for dark mode */
     --border-accent: rgba(59, 130, 246, 0.2);
 
     --radius: 16px;
@@ -33,11 +29,91 @@
     --radius-xs: 6px;
 
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-    /* Darker shadows */
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.4);
 
     --transition: 0.2s ease;
+}
+
+/* Light Mode */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f8f9fa;
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a5a;
+    --text-muted: #8a8a9a;
+    --text-dark: #1a1a2e;
+    --text-dark-secondary: #4a4a5a;
+
+    --border: rgba(0, 0, 0, 0.08);
+    --border-light: rgba(0, 0, 0, 0.06);
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .grid-bg {
+    opacity: 0.3;
+    background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+}
+
+[data-theme="light"] .card {
+    border-color: var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+[data-theme="light"] nav {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid var(--border);
+}
+
+[data-theme="light"] .section-dark {
+    background: var(--bg-secondary);
+}
+
+[data-theme="light"] .section-light {
+    background: var(--bg-primary);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    margin-right: 12px;
+}
+
+.theme-toggle:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+}
+
+[data-theme="light"] .theme-toggle .icon-moon,
+[data-theme="dark"] .theme-toggle .icon-sun,
+:root:not([data-theme]) .theme-toggle .icon-sun {
+    display: none;
+}
+
+[data-theme="light"] .theme-toggle .icon-sun,
+[data-theme="dark"] .theme-toggle .icon-moon,
+:root:not([data-theme]) .theme-toggle .icon-moon {
+    display: block;
 }
 
 * {
@@ -991,4 +1067,77 @@ footer {
     width: 16px;
     height: 16px;
     border-radius: 2px;
+}
+/* Widget Pointer */
+.widget-pointer {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 99998;
+    animation: widget-pointer-bounce 2s infinite;
+    pointer-events: none;
+}
+
+.widget-pointer-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+}
+
+.widget-pointer-arrow {
+    font-size: 1.5rem;
+    animation: arrow-bounce 1s infinite;
+}
+
+@keyframes widget-pointer-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes arrow-bounce {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(4px, 4px); }
+}
+
+@media (max-width: 768px) {
+    .widget-pointer {
+        bottom: 90px;
+        right: 20px;
+    }
+    
+    .widget-pointer-content {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Light mode fixes for card-light and section-light */
+[data-theme="light"] .card-light {
+    background: #ffffff;
+    border-color: #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .card-light:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .section-light {
+    background: #f8f9fa;
+}
+
+[data-theme="light"] .section-light p {
+    color: #4a4a5a;
+}
+
+[data-theme="light"] .section-light .card-light p {
+    color: #1a1a2e;
 }
