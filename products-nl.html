@@ -57,296 +57,216 @@
         <section class="hero section-dark" style="padding-bottom: 60px;">
             <div class="container">
                 <h1>AI-Werknemers Die<br><span class="text-accent">24/7 Werken</span></h1>
-                <p>Kies de AI die bij jouw bedrijf past. WhatsApp, telefoon, of allebei — wij regelen het.</p>
+                <p>Website chat, WhatsApp, telefoon — of alle drie. Kies wat bij uw bedrijf past.</p>
             </div>
         </section>
 
         <!-- Pricing Cards -->
-        <section class="section section-dark" style="padding-top: 0;">
+        <section class="section section-dark" id="pricing" style="padding-top: 0;">
             <div class="container">
 
-                <!-- SECTION 1: Text AI Assistants (Website + WhatsApp side by side) -->
-                <div id="text-ai">
-                    <h2 class="text-center mb-2">Tekst AI Assistenten</h2>
-                    <p class="text-center text-muted mb-5">Direct antwoord op berichten — op je website of WhatsApp.</p>
+                <!-- Row 1: Website & WhatsApp -->
+                <div class="grid-2-cols mb-5" style="margin-bottom: 48px;">
+                    <!-- Card 1: Website AI Chatbot -->
+                    <div class="card pricing-card">
+                        <h3>🌐 Website AI Chatbot</h3>
+                        <p class="text-muted">Betrek elke bezoeker</p>
 
-                    <div class="grid-2-cols mb-5" style="max-width: 900px; margin: 0 auto;">
-                        <!-- Website AI Chatbot -->
-                        <div class="card pricing-card" id="website">
-                            <div class="pricing-badge"
-                                style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Instapmodel
-                            </div>
-                            <h3>🌐 Website AI Chatbot</h3>
-                            <p class="text-muted">Jouw 24/7 website verkoopmedewerker</p>
-
-                            <div class="price"
-                                style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
-                                <del style="font-size: 1.2rem; color: var(--text-muted);">€199</del>
-                                <span>€99<span
-                                        style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
-                            </div>
-
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 24px; display: inline-block;">
-                                Founding Price — slechts 10 plekken</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€149
-                                eenmalige setup</p>
-
-                            <ul class="pricing-features">
-                                <li>Live chat widget op je website</li>
-                                <li>Beantwoordt bezoekersvragen 24/7</li>
-                                <li>Verzamelt leads automatisch</li>
-                                <li>Boekt afspraken vanaf je site</li>
-                                <li>Spreekt 50+ talen</li>
-                                <li>Eigen branding & kleuren</li>
-                            </ul>
-
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Beginnen →</a>
+                        <div class="price" style="display: flex; gap: 12px; align-items: baseline;">
+                            <del style="font-size: 1.2rem; color: var(--text-muted);">€299</del>
+                            <span>€149<span
+                                    style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
                         </div>
 
-                        <!-- WhatsApp AI Assistant -->
-                        <div class="card pricing-card featured" id="whatsapp">
-                            <div class="pricing-badge">Meest Gekozen</div>
-                            <h3>💬 WhatsApp AI Assistent</h3>
-                            <p class="text-muted">Jouw 24/7 WhatsApp receptioniste</p>
-
-                            <div class="price"
-                                style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
-                                <del style="font-size: 1.2rem; color: var(--text-muted);">€249</del>
-                                <span>€149<span
-                                        style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
-                            </div>
-
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 24px; display: inline-block;">
-                                Founding Price — slechts 5 plekken</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€249
-                                eenmalige setup</p>
-
-                            <ul class="pricing-features">
-                                <li>Direct antwoord 24/7</li>
-                                <li>Boekt automatisch afspraken</li>
-                                <li>Beantwoordt veelgestelde vragen</li>
-                                <li>Spreekt 50+ talen</li>
-                                <li>Onbeperkt aantal berichten</li>
-                                <li>Werkt met jouw boekingssysteem</li>
-                            </ul>
-
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Beginnen →</a>
+                        <div
+                            style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 8px; display: inline-block;">
+                            Founding Member Prijs
                         </div>
+                        <p
+                            style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 24px; font-style: italic;">
+                            Zet dit tarief vast — prijzen stijgen na onze eerste 5 klanten
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">
+                            €499 eenmalige setup <span
+                                style="text-decoration: line-through; color: var(--text-muted); margin-left: 4px;">€999</span>
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li>Live chat widget op uw website</li>
+                            <li>Beantwoordt bezoekersvragen 24/7</li>
+                            <li>Verzamelt leads automatisch</li>
+                            <li>Boekt afspraken via uw site</li>
+                            <li>Spreekt 50+ talen</li>
+                            <li>Eigen huisstijl & kleuren</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Beginnen →</a>
+                    </div>
+
+                    <!-- Card 2: WhatsApp AI Assistant -->
+                    <div class="card pricing-card">
+                        <h3>💬 WhatsApp AI Assistent</h3>
+                        <p class="text-muted">Uw 24/7 WhatsApp receptionist</p>
+
+                        <div class="price" style="display: flex; gap: 12px; align-items: baseline;">
+                            <del style="font-size: 1.2rem; color: var(--text-muted);">€399</del>
+                            <span>€199<span
+                                    style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
+                        </div>
+
+                        <div
+                            style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 8px; display: inline-block;">
+                            Founding Member Prijs
+                        </div>
+                        <p
+                            style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 24px; font-style: italic;">
+                            Zet dit tarief vast — prijzen stijgen na onze eerste 5 klanten
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">
+                            €499 eenmalige setup <span
+                                style="text-decoration: line-through; color: var(--text-muted); margin-left: 4px;">€999</span>
+                        </p>
+
+                        <ul class="pricing-features">
+                            <li>Direct antwoord 24/7</li>
+                            <li>Boekt automatisch afspraken</li>
+                            <li>Beantwoordt veelgestelde vragen</li>
+                            <li>Spreekt 50+ talen</li>
+                            <li>Onbeperkt aantal berichten</li>
+                            <li>Werkt met uw boekingssysteem</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Beginnen →</a>
                     </div>
                 </div>
 
-                <!-- SECTION 2: AI Voice Agent -->
-                <div id="voice">
-                    <h2 class="text-center mb-2">AI Voice Agent</h2>
-                    <p class="text-center text-muted mb-5">Jouw 24/7 telefonische receptioniste. Vangt de oproepen op
-                        die jij mist —
-                        wanneer jij niet kunt opnemen, neemt je AI het over.</p>
+                <!-- Row 2: Voice Agents -->
+                <div class="grid-2-cols mb-5" style="margin-bottom: 48px;">
+                    <!-- Card 3: Voice Starter -->
+                    <div class="card pricing-card">
+                        <h3>📞 AI Voice Agent Starter</h3>
+                        <p class="text-muted">Perfect voor piekuren & overloop</p>
 
-                    <div class="grid-3-cols mb-5">
-                        <!-- Card 1: Starter -->
-                        <div class="card pricing-card">
-                            <div class="pricing-badge"
-                                style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Binnenkort
-                            </div>
-                            <h3>Starter</h3>
-                            <p class="text-muted">Voor sportscholen & kleine studio's</p>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€249</del>
-                                <span>€199<span style="font-size: 0.9rem;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs — slechts 5 plekken</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">€249 eenmalige setup</p>
-
-                            <div
-                                style="margin: 16px 0; padding: 12px; background: var(--bg-primary); border-radius: var(--radius-sm);">
-                                <strong>150 minuten</strong><span class="text-muted">/maand</span><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">€0.30/min overschot</span>
-                            </div>
-
-                            <ul class="pricing-features">
-                                <li>Beantwoordt telefoontjes 24/7</li>
-                                <li>Natuurlijke menselijke stem</li>
-                                <li>Boekt afspraken via de telefoon</li>
-                                <li>Neemt berichten voor je aan</li>
-                                <li>Engels & Nederlands ondersteund</li>
-                                <li>Eigen begroeting & persoonlijkheid</li>
-                            </ul>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Wachtlijst
-                                →</a>
+                        <div class="price" style="display: flex; gap: 12px; align-items: baseline;">
+                            <del style="font-size: 1.2rem; color: var(--text-muted);">€499</del>
+                            <span>€249<span
+                                    style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
                         </div>
 
-                        <!-- Card 2: Pro -->
-                        <div class="card pricing-card featured">
-                            <div class="pricing-badge">Meest Gekozen</div>
-                            <h3>Pro</h3>
-                            <p class="text-muted">Voor salons & klinieken</p>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€399</del>
-                                <span>€299<span style="font-size: 0.9rem;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs — slechts 5 plekken</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">€249 eenmalige setup</p>
+                        <div
+                            style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 8px; display: inline-block;">
+                            Founding Member Prijs
+                        </div>
+                        <p
+                            style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 24px; font-style: italic;">
+                            Zet dit tarief vast — prijzen stijgen na onze eerste 5 klanten
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
+                            €499 eenmalige setup <span
+                                style="text-decoration: line-through; color: var(--text-muted); margin-left: 4px;">€999</span>
+                        </p>
 
-                            <div
-                                style="margin: 16px 0; padding: 12px; background: var(--bg-primary); border-radius: var(--radius-sm);">
-                                <strong>400 minuten</strong><span class="text-muted">/maand</span><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">€0.25/min overschot</span>
-                            </div>
-
-                            <ul class="pricing-features">
-                                <li><strong>Alles in Starter, plus:</strong></li>
-                                <li>Gespreksopnames & transcripties</li>
-                                <li>Prioriteit support</li>
-                                <li>Verbindt urgente oproepen door</li>
-                            </ul>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Wachtlijst
-                                →</a>
+                        <div style="margin-bottom: 16px; font-size: 0.9rem; color: var(--text-secondary);">
+                            <strong>200 minuten</strong>/maand<br>
+                            <span class="text-muted">€0.30/min overschot</span>
                         </div>
 
-                        <!-- Card 3: Ultimate -->
-                        <div class="card pricing-card">
-                            <div class="pricing-badge"
-                                style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Binnenkort
-                            </div>
-                            <h3>Ultimate</h3>
-                            <p class="text-muted">Voor drukke klinieken & restaurants</p>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€599</del>
-                                <span>€449<span style="font-size: 0.9rem;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs — slechts 5 plekken</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">€249 eenmalige setup</p>
+                        <ul class="pricing-features">
+                            <li>Beantwoordt telefoontjes 24/7</li>
+                            <li>Natuurlijke menselijke stem</li>
+                            <li>Boekt afspraken telefonisch</li>
+                            <li>Neemt berichten voor u aan</li>
+                            <li>Nederlands & Engels ondersteund</li>
+                            <li>Aangepaste begroeting & persoonlijkheid</li>
+                        </ul>
 
-                            <div
-                                style="margin: 16px 0; padding: 12px; background: var(--bg-primary); border-radius: var(--radius-sm);">
-                                <strong>1,000 minuten</strong><span class="text-muted">/maand</span><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">€0.20/min overschot</span>
-                            </div>
+                        <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Beginnen →</a>
+                    </div>
 
-                            <ul class="pricing-features">
-                                <li><strong>Alles in Pro, plus:</strong></li>
-                                <li>Persoonlijk setup gesprek</li>
-                                <li>Maatwerk integraties</li>
-                                <li>Maandelijkse prestatie review</li>
-                            </ul>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Wachtlijst
-                                →</a>
+                    <!-- Card 4: Voice Pro -->
+                    <div class="card pricing-card featured">
+                        <div class="pricing-badge">Meest Populair</div>
+                        <h3>📞 AI Voice Agent Pro</h3>
+                        <p class="text-muted">Volledige receptie vervanging</p>
+
+                        <div class="price" style="display: flex; gap: 12px; align-items: baseline;">
+                            <del style="font-size: 1.2rem; color: var(--text-muted);">€699</del>
+                            <span>€349<span
+                                    style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
                         </div>
+
+                        <div
+                            style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 8px; display: inline-block;">
+                            Founding Member Prijs
+                        </div>
+                        <p
+                            style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 24px; font-style: italic;">
+                            Zet dit tarief vast — prijzen stijgen na onze eerste 5 klanten
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
+                            €499 eenmalige setup <span
+                                style="text-decoration: line-through; color: var(--text-muted); margin-left: 4px;">€999</span>
+                        </p>
+
+                        <div style="margin-bottom: 16px; font-size: 0.9rem; color: var(--text-secondary);">
+                            <strong>500 minuten</strong>/maand<br>
+                            <span class="text-muted">€0.25/min overschot</span>
+                        </div>
+
+                        <ul class="pricing-features">
+                            <li><strong>Alles in Starter, plus:</strong></li>
+                            <li>Gespreksopnames & transcripties</li>
+                            <li>Prioriteit support</li>
+                            <li>Schakelt dringende oproepen door</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Beginnen →</a>
                     </div>
                 </div>
 
-                <!-- SECTION 3: Bundle Deals -->
-                <div id="bundle">
-                    <h2 class="text-center mb-2" style="margin-top: 80px;">Bespaar Meer met een Bundel</h2>
-                    <p class="text-center text-muted mb-5">Combineer producten voor complete dekking</p>
+                <p
+                    style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: -24px; margin-bottom: 48px;">
+                    Meer minuten of maatwerk nodig? <a href="contact-nl.html"
+                        style="color: var(--text-muted); text-decoration: underline;">Neem contact op →</a>
+                </p>
 
-                    <!-- Complete Bundle (All 3) -->
-                    <div style="max-width: 450px; margin: 0 auto 48px;">
-                        <div class="card pricing-card featured">
-                            <div class="pricing-badge">Beste Waarde — Bespaar €248</div>
-                            <h3>Complete Bundel</h3>
-                            <p class="text-muted">Website + WhatsApp + Voice Pro</p>
-                            <div class="price"
-                                style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1.2rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€597</del>
-                                <span>€349<span
-                                        style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs — slechts 5 plekken</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€449
-                                eenmalige setup (bespaar €198)</p>
+                <!-- Row 3: Complete Bundle -->
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <div class="card pricing-card featured"
+                        style="border: 1px solid var(--accent); box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);">
+                        <div class="pricing-badge" style="background: var(--accent); color: white;">Beste Waarde</div>
+                        <h3 style="margin-top: 10px;">🚀 Complete Bundel</h3>
+                        <p class="text-muted">Website + WhatsApp + Voice Pro</p>
 
-                            <ul class="pricing-features">
-                                <li>🌐 Website AI Chatbot</li>
-                                <li>💬 WhatsApp AI Assistent</li>
-                                <li>📞 AI Voice Agent (Pro niveau)</li>
-                                <li>400 belminuten/maand</li>
-                                <li>Prioriteit support</li>
-                                <li>Uniforme klanthistorie</li>
-                            </ul>
-
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary">Kies de Complete
-                                Bundel →</a>
-                        </div>
-                    </div>
-
-                    <h3 class="text-center mb-4" style="color: var(--text-secondary); font-weight: 400;">Of kies een
-                        kleinere bundel:</h3>
-
-                    <div class="grid-3-cols">
-                        <!-- Bundle 1: Website + WhatsApp -->
-                        <div class="card pricing-card">
-                            <h3>Website + WhatsApp</h3>
-                            <p class="text-muted">Tekstkanalen gedekt</p>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€448</del>
-                                <span>€219<span style="font-size: 0.9rem;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€349 setup
-                                (bespaar €49)</p>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Kies Deze Bundel
-                                →</a>
+                        <div class="price"
+                            style="display: flex; gap: 12px; align-items: baseline; justify-content: center;">
+                            <del style="font-size: 1.2rem; color: var(--text-muted);">€997</del>
+                            <span>€549<span
+                                    style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/maand</span></span>
                         </div>
 
-                        <!-- Bundle 2: WhatsApp + Voice -->
-                        <div class="card pricing-card">
-                            <h3>WhatsApp + Voice</h3>
-                            <p class="text-muted">Mobiele kanalen gedekt</p>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€498</del>
-                                <span>€299<span style="font-size: 0.9rem;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€399 setup
-                                (bespaar €99)</p>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Kies Deze Bundel
-                                →</a>
+                        <div
+                            style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 8px; display: inline-block;">
+                            Founding Member Prijs
                         </div>
+                        <p
+                            style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 24px; font-style: italic;">
+                            Zet dit tarief vast — prijzen stijgen na onze eerste 5 klanten
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">
+                            €799 eenmalige setup <span
+                                style="text-decoration: line-through; color: var(--text-muted); margin-left: 4px;">€1.497</span>
+                        </p>
 
-                        <!-- Bundle 3: Website + Voice -->
-                        <div class="card pricing-card">
-                            <h3>Website + Voice</h3>
-                            <p class="text-muted">Inkomende kanalen gedekt</p>
-                            <div class="price"
-                                style="display: flex; gap: 8px; align-items: baseline; justify-content: center;">
-                                <del
-                                    style="font-size: 1rem; color: var(--text-muted); text-decoration-color: var(--text-muted);">€448</del>
-                                <span>€269<span style="font-size: 0.9rem;">/maand</span></span>
-                            </div>
-                            <div
-                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 16px; display: inline-block;">
-                                Founding Member Prijs</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">€349 setup
-                                (bespaar €49)</p>
-                            <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-outline">Kies Deze Bundel
-                                →</a>
-                        </div>
+                        <ul class="pricing-features">
+                            <li><strong>Alle functies van alle producten gecombineerd</strong></li>
+                            <li>Eén dashboard</li>
+                            <li>Eén aanspreekpunt</li>
+                            <li>Prioriteit support</li>
+                        </ul>
+
+                        <a href="https://calendly.com/builtbyjo/free-call" class="btn btn-primary btn-lg"
+                            style="width: 100%;">Kies de Complete Bundel →</a>
                     </div>
                 </div>
 
@@ -584,7 +504,7 @@
                     </div>
 
                     <div class="card card-light" style="text-align: center;">
-                        <h3 style="font-size: 3rem; color: var(--accent); margin-bottom: 8px;">€50-200</h3>
+                        <h3 style="font-size: 3rem; color: var(--accent); margin-bottom: 8px;">€75-200</h3>
                         <p style="color: var(--text-dark); font-weight: 500;">gemiddelde waarde van één gemiste boeking
                         </p>
                     </div>
@@ -596,15 +516,37 @@
                     </div>
                 </div>
 
-                <div class="card card-light mt-5"
-                    style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;">
-                    <h4 style="color: var(--text-dark); margin-bottom: 16px;">Vlug Voorbeeld</h4>
-                    <p>Een kapsalon met een gemiddelde boekingswaarde van €75 mist slechts 3 potentiële klanten per week
-                        door
-                        trage reacties of gemiste oproepen. Dat is <strong style="color: var(--accent);">€900/maand aan
-                            verloren
-                            omzet</strong> — bijna 5x de kosten van de WhatsApp AI.</p>
+                <!-- ROI Examples -->
+                <div class="grid-3-cols mt-5">
+                    <!-- Example 1: Kapsalon -->
+                    <div class="card card-light" style="text-align: center;">
+                        <h4 style="color: var(--text-dark); margin-bottom: 16px;">💇‍♀️ Kapsalon</h4>
+                        <p style="font-size: 0.95rem;">Een salon met een gemiddelde boeking van €75 mist slechts 3
+                            klanten per week door trage reacties. Dat is <strong>€900/maand aan verloren omzet</strong>
+                            — 4,5x de kosten van de WhatsApp AI (€199/mnd).</p>
+                    </div>
+
+                    <!-- Example 2: Gym -->
+                    <div class="card card-light" style="text-align: center;">
+                        <h4 style="color: var(--text-dark); margin-bottom: 16px;">🏋️ Gym / CrossFit</h4>
+                        <p style="font-size: 0.95rem;">Een sportschool die €120/maand vraagt, loopt slechts 2
+                            inschrijvingen per maand mis door gemiste berichten. Dat is <strong>€240/maand weg</strong>
+                            — de Website Chatbot (€149/mnd) betaalt zichzelf terug met één extra lid.</p>
+                    </div>
+
+                    <!-- Example 3: Clinic -->
+                    <div class="card card-light" style="text-align: center;">
+                        <h4 style="color: var(--text-dark); margin-bottom: 16px;">👨‍⚕️ Kliniek / Fysio</h4>
+                        <p style="font-size: 0.95rem;">Een fysiotherapeut vraagt €60 per sessie. Slechts 4 gemiste
+                            oproepen per week betekent <strong>€960/maand verlies</strong> — de Voice Agent (€249/mnd)
+                            vangt die oproepen op voor een kwart van de kosten.</p>
+                    </div>
                 </div>
+
+                <p
+                    style="text-align: center; font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin-top: 48px;">
+                    Elk product betaalt zichzelf terug binnen de eerste week.
+                </p>
             </div>
         </section>
 
@@ -616,74 +558,120 @@
                 </div>
 
                 <div style="overflow-x: auto;">
-                    <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                    <table style="width: 100%; border-collapse: collapse; min-width: 800px;">
                         <thead>
                             <tr style="border-bottom: 1px solid var(--border);">
                                 <th
                                     style="text-align: left; padding: 16px; color: var(--text-secondary); font-weight: 500;">
-                                    Feature</th>
+                                    Functie</th>
+                                <th style="text-align: center; padding: 16px;">Website Chatbot<br><span
+                                        style="color: var(--accent);">€149/mnd</span></th>
                                 <th style="text-align: center; padding: 16px;">WhatsApp AI<br><span
                                         style="color: var(--accent);">€199/mnd</span></th>
                                 <th style="text-align: center; padding: 16px;">Voice Agent<br><span
                                         style="color: var(--accent);">€249/mnd</span></th>
                                 <th
                                     style="text-align: center; padding: 16px; background: var(--accent-glow); border-radius: 8px 8px 0 0;">
-                                    Bundel<br><span style="color: var(--accent);">€349/mnd</span></th>
+                                    Bundel<br><span style="color: var(--accent);">€549/mnd</span></th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Website chat widget -->
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Website chat widget</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <!-- WhatsApp responses -->
                             <tr style="border-bottom: 1px solid var(--border);">
                                 <td style="padding: 16px;">WhatsApp reacties</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
                                     ✓</td>
                             </tr>
+                            <!-- Phone call handling -->
                             <tr style="border-bottom: 1px solid var(--border);">
                                 <td style="padding: 16px;">Telefonische afhandeling</td>
                                 <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
                                     ✓</td>
                             </tr>
+                            <!-- Appointment booking -->
                             <tr style="border-bottom: 1px solid var(--border);">
                                 <td style="padding: 16px;">Afspraken boeken</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
                                     ✓</td>
                             </tr>
+                            <!-- 24/7 availability -->
                             <tr style="border-bottom: 1px solid var(--border);">
                                 <td style="padding: 16px;">24/7 beschikbaarheid</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
                                     ✓</td>
                             </tr>
+                            <!-- Multi-language support -->
                             <tr style="border-bottom: 1px solid var(--border);">
                                 <td style="padding: 16px;">Meertalige ondersteuning</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">50+ talen</td>
                                 <td style="text-align: center; padding: 16px; color: var(--accent);">50+ talen</td>
                                 <td style="text-align: center; padding: 16px;">EN, NL</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
                                     Volledige support</td>
                             </tr>
+                            <!-- Lead capture -->
                             <tr style="border-bottom: 1px solid var(--border);">
-                                <td style="padding: 16px;">Prioriteit support</td>
-                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
-                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="padding: 16px;">Lead verzameling</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
                                     ✓</td>
                             </tr>
+                            <!-- Custom branding -->
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Eigen huisstijl</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <!-- Call recordings & transcripts -->
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 16px;">Gespreksopnames & transcripties</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
+                                <td
+                                    style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow);">
+                                    ✓</td>
+                            </tr>
+                            <!-- Priority support -->
                             <tr>
-                                <td style="padding: 16px;">Uniforme klanthistorie</td>
+                                <td style="padding: 16px;">Prioriteit support</td>
                                 <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
                                 <td style="text-align: center; padding: 16px; color: var(--text-muted);">—</td>
+                                <td style="text-align: center; padding: 16px; color: var(--accent);">✓</td>
                                 <td
                                     style="text-align: center; padding: 16px; color: var(--accent); background: var(--accent-glow); border-radius: 0 0 8px 8px;">
                                     ✓</td>
