@@ -594,12 +594,12 @@
         <div class="bj-window">
             <div class="bj-header">
                 <div class="bj-header-info">
-                    <div class="bj-avatar">🤖</div>
+                    <div class="bj-avatar">K</div>
                     <div class="bj-title-area">
                         <div class="bj-name">${config.name}</div>
                         <div class="bj-status">
                             <div class="bj-status-dot"></div>
-                            Online — replies instantly
+                            Online
                         </div>
                     </div>
                 </div>
@@ -671,12 +671,7 @@
     }
 
     // Default Quick Replies
-    const defaultQuickReplies = [
-        "What do you offer?",
-        "How does it work?",
-        "Pricing",
-        "Book a free call"
-    ];
+    const defaultQuickReplies = [];
 
     // Functions
     function toggleChat() {
@@ -689,7 +684,6 @@
             // First open logic
             if (state.messages.length === 0) {
                 addBotMessage(config.greeting);
-                renderQuickReplies(defaultQuickReplies);
             }
         } else {
             widgetContainer.classList.remove('bj-open');
