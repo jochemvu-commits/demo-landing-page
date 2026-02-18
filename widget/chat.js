@@ -327,12 +327,36 @@
         #bjWidget .bj-dot:nth-child(2) { animation-delay: -0.16s; }
 
         /* Quick Replies */
-        #bjWidget .bj-quick-replies {
-            padding: 0 20px 12px 20px;
+        .bj-quick-replies-wrapper {
+            padding: 0 12px 0 12px;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            animation: bj-fade-in-up 0.3s ease forwards;
         }
+
+        #bjWidget .bj-quick-reply-btn {
+            background: transparent;
+            border: 1px solid ${config.color};
+            color: ${config.color};
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        #bjWidget .bj-quick-reply-btn:disabled {
+            border-color: #525252;
+            color: #737373;
+            cursor: default;
+            opacity: 0.6;
+        }
+
 
         #bjWidget .bj-quick-reply-btn {
             background: transparent;
@@ -611,10 +635,7 @@
             <div class="bj-messages" id="bjMessages">
                 <!-- Messages injected here -->
             </div>
-            
-            <div class="bj-quick-replies" id="bjQuickReplies">
-                <!-- Quick replies injected here -->
-            </div>
+
 
             <div class="bj-input-area">
                 <form class="bj-input-wrapper" id="bjChatForm">
@@ -642,7 +663,6 @@
     const toggleBtn = widgetContainer.querySelector('#bjToggle');
     const windowEl = widgetContainer.querySelector('.bj-window');
     const messagesEl = widgetContainer.querySelector('#bjMessages');
-    const quickRepliesEl = widgetContainer.querySelector('#bjQuickReplies');
     const form = widgetContainer.querySelector('#bjChatForm');
     const input = widgetContainer.querySelector('.bj-input');
     const sendBtn = widgetContainer.querySelector('.bj-send-btn');
@@ -741,29 +761,41 @@
         if (typingEl) typingEl.remove();
     }
 
-    function renderQuickReplies(replies) {
-        quickRepliesEl.innerHTML = '';
+    function disableOldQuickReplies() {
+        const buttons = messagesEl.querySelectorAll('.bj-quick-reply-btn');
+        buttons.forEach(btn => {
+            btn.disabled = true;
+        });
+    }
+
+    function appendQuickReplies(replies) {
         if (!replies || replies.length === 0) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'bj-quick-replies-wrapper';
 
         replies.forEach(reply => {
             const btn = document.createElement('button');
             btn.className = 'bj-quick-reply-btn';
             btn.textContent = reply;
             btn.onclick = () => handleSendMessage(reply);
-            quickRepliesEl.appendChild(btn);
+            wrapper.appendChild(btn);
         });
+
+        messagesEl.appendChild(wrapper);
+        scrollToBottom();
     }
 
     async function handleSendMessage(text) {
         if (!text.trim()) return;
 
+        // Disable old buttons immediately
+        disableOldQuickReplies();
+
         // Use the text passed or from input
         const messageText = text;
         input.value = '';
         sendBtn.disabled = true;
-
-        // Clear quick replies immediately when user acts
-        renderQuickReplies([]);
 
         addUserMessage(messageText);
         showTyping();
@@ -794,7 +826,7 @@
             addBotMessage(botText);
 
             if (data.quickReplies && Array.isArray(data.quickReplies)) {
-                renderQuickReplies(data.quickReplies);
+                appendQuickReplies(data.quickReplies);
             }
 
         } catch (error) {
@@ -813,7 +845,6 @@
     function resetSession() {
         // Clear UI
         messagesEl.innerHTML = '';
-        quickRepliesEl.innerHTML = '';
         state.messages = [];
 
         // Reset Session ID
@@ -823,7 +854,7 @@
 
         // Restart flow
         addBotMessage(config.greeting);
-        renderQuickReplies(defaultQuickReplies);
+        appendQuickReplies(defaultQuickReplies);
     }
 
     // Event Listeners
