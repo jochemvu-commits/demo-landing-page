@@ -400,6 +400,11 @@
             outline: none;
             font-family: 'DM Sans', sans-serif;
             transition: border-color 0.2s ease;
+            resize: none;
+            overflow: hidden;
+            min-height: 44px; /* Matches previous height approx */
+            max-height: 100px; /* Approx 3-4 lines */
+            line-height: 1.5;
         }
 
         #bjWidget .bj-input:focus {
@@ -639,7 +644,7 @@
 
             <div class="bj-input-area">
                 <form class="bj-input-wrapper" id="bjChatForm">
-                    <input type="text" class="bj-input" placeholder="Type a message..." aria-label="Type a message">
+                    <textarea class="bj-input" placeholder="Type a message..." aria-label="Type a message" rows="1"></textarea>
                     <button type="submit" class="bj-send-btn" disabled>
                         ${icons.send}
                     </button>
@@ -835,6 +840,10 @@
             addBotMessage("Having trouble connecting. You can reach us at jay@builtbyjo.co");
         } finally {
             sendBtn.disabled = false;
+            // Reset height
+            input.style.height = 'auto';
+            input.style.overflowY = 'hidden';
+
             // Keep input focused
             if (window.innerWidth > 480) { // Don't force focus on mobile to avoid keyboard jumping
                 input.focus();
@@ -865,8 +874,31 @@
         handleSendMessage(input.value);
     });
 
-    input.addEventListener('input', () => {
-        sendBtn.disabled = !input.value.trim();
+    // Auto-resize textarea
+    input.addEventListener('input', function () {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+
+        // Toggle overflow based on max-height (100px)
+        if (this.scrollHeight > 100) {
+            this.style.overflowY = 'auto';
+        } else {
+            this.style.overflowY = 'hidden';
+        }
+
+        sendBtn.disabled = !this.value.trim();
+    });
+
+    // Handle Enter vs Shift+Enter
+    input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            if (!sendBtn.disabled) {
+                // Manually trigger submit
+                const event = new Event('submit', { cancelable: true });
+                form.dispatchEvent(event);
+            }
+        }
     });
 
     resetBtn.addEventListener('click', () => {
