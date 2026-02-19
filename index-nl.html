@@ -197,7 +197,7 @@
         </section>
 
         <!-- Demo Section -->
-        <section class="section section-dark">
+        <section class="section section-dark" id="demos">
             <div class="container">
                 <div class="section-header">
                     <h2>Zie Het in Actie</h2>
@@ -205,58 +205,46 @@
                 </div>
 
                 <div class="demo-section">
-                    <div class="demo-content">
+                    <div class="demo-content" style="align-items: center;">
                         <div>
                             <h3 class="mb-3">Probeer de WhatsApp Demo</h3>
                             <p class="mb-4">Stuur een bericht naar onze demo-bot en zie hoe deze echte gesprekken voert.
                                 Vraag naar diensten, prijzen of probeer een afspraak te maken.</p>
 
                             <div class="mb-4">
-                                <p class="text-muted mb-2"><strong>Probeer te vragen:</strong></p>
-                                <ul style="list-style: none; color: var(--text-secondary);">
-                                    <li style="padding: 8px 0;">💬 "Welke diensten bied je aan?"</li>
-                                    <li style="padding: 8px 0;">💬 "Ik wil graag een afspraak maken"</li>
-                                    <li style="padding: 8px 0;">💬 "Wat zijn jullie prijzen?"</li>
-                                    <li style="padding: 8px 0;">💬 "Heb je morgen tijd?"</li>
+                                <ul style="list-style: none; color: var(--text-secondary); padding: 0;">
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">💬</span>
+                                        <span><strong>Directe antwoorden</strong> — reageert in seconden, 24/7</span>
+                                    </li>
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">🎯</span>
+                                        <span><strong>Kent je bedrijf</strong> — prijzen, diensten,
+                                            beschikbaarheid</span>
+                                    </li>
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">🤝</span>
+                                        <span><strong>Boekt gesprekken voor je</strong> — begeleidt klanten om te
+                                            plannen</span>
+                                    </li>
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">⚙️</span>
+                                        <span><strong>Volledig aanpasbaar</strong> — jouw toon, jouw info, jouw
+                                            regels</span>
+                                    </li>
                                 </ul>
                             </div>
 
                             <a href="https://wa.me/15164352731" target="_blank" class="btn btn-primary">
-                                💬 Open WhatsApp Demo →
+                                Probeer het Live op WhatsApp →
                             </a>
-                        </div>
-
-                        <div class="demo-phone">
-                            <div class="demo-phone-screen">
-                                <div class="demo-placeholder">
-                                    <div>
-                                        <p style="font-size: 2rem; margin-bottom: 12px;">💬</p>
-                                        <p>WhatsApp Demo<br><small>Klik om live te proberen</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demo-section mt-5">
-                    <div class="demo-content" style="align-items: center;">
-                        <div>
-                            <h3 class="mb-3">Bekijk de Website Chat in actie</h3>
-                            <p class="mb-4">Zie hoe onze AI-assistent een echt gesprek afhandelt — vragen beantwoordt,
-                                prijzen deelt en een gesprek inplant.</p>
-
-                            <p class="mb-4">
-                                <strong class="text-accent">Probeer het zelf — klik op het chat-icoon rechtsonder
-                                    👇</strong>
-                            </p>
                         </div>
 
                         <div class="demo-phone"
                             style="display: flex; align-items: center; justify-content: center; width: 100%;">
                             <video controls playsinline preload="metadata"
                                 style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-lg); background: #000; display: block;">
-                                <source src="Demo/builtbyjo-website-widget-demo.mp4" type="video/mp4">
+                                <source src="Demo/Whatsapp-demo.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -265,9 +253,57 @@
 
                 <div class="demo-section mt-5">
                     <div class="demo-content" style="align-items: center;">
+                        <div class="demo-phone"
+                            style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                            <video controls playsinline preload="metadata"
+                                style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-lg); background: #000; display: block;">
+                                <source src="Demo/builtbyjo-website-widget-demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div>
+                            <h3 class="mb-3">Bekijk de Website Chat in actie</h3>
+                            <p class="mb-4">Zie hoe onze AI-assistent een echt gesprek afhandelt — vragen beantwoordt,
+                                prijzen deelt en een gesprek inplant.</p>
+
+                            <div class="mb-4">
+                                <ul style="list-style: none; color: var(--text-secondary); padding: 0;">
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">🌐</span>
+                                        <span><strong>Op je website</strong> — bezoekers chatten zonder de pagina te
+                                            verlaten</span>
+                                    </li>
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">⚡</span>
+                                        <span><strong>Directe antwoorden</strong> — prijzen, FAQ's, diensten in
+                                            seconden</span>
+                                    </li>
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">🗣️</span>
+                                        <span><strong>Spreekt je taal</strong> — Ondersteunt 50+ talen direct</span>
+                                    </li>
+                                    <li style="padding: 8px 0; display: flex; gap: 12px;">
+                                        <span style="font-size: 1.2rem;">⚙️</span>
+                                        <span><strong>Volledig aanpasbaar</strong> — jouw toon, jouw info, jouw
+                                            regels</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="mb-4">
+                                <strong class="text-accent">Probeer het zelf — klik op het chat-icoon rechtsonder
+                                    👇</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-section mt-5">
+                    <div class="demo-content" style="align-items: center;">
                         <div>
                             <h3 class="mb-3">Beluister de Voice Agent</h3>
-                            <p class="mb-4">Luister hoe Emma een gratis proefles inplant in minder dan 60 seconden.</p>
+                            <p class="mb-4">Luister hoe Emma een proefles boekt in minder dan 90 seconden.</p>
 
                             <div class="mb-4">
                                 <ul style="list-style: none; color: var(--text-secondary); padding: 0;">
@@ -304,7 +340,7 @@
                             style="display: flex; align-items: center; justify-content: center; width: 100%;">
                             <video controls playsinline preload="metadata"
                                 style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-lg); background: #000; display: block;">
-                                <source src="Demo/english-voice-demo.mp4" type="video/mp4">
+                                <source src="Demo/dutch-voice-demo.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
